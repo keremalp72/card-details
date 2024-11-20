@@ -1,0 +1,396 @@
+@import url(/assets/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+body {
+  font-family: "Space Grotesk", serif;
+}
+input {
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+  outline: none;
+}
+.container {
+  background-color: #21092f;
+  width: 100%;
+  height: 240px;
+}
+.card-backside {
+  position: absolute;
+  width: 286px;
+  height: 157px;
+  top: 32px;
+  right: 16px;
+  background: linear-gradient(168.73deg, #ffffff 5%, #d2d3d9 91.69%);
+  border-radius: 6px;
+}
+.card-backside img {
+  margin: auto;
+  margin-top: 15px;
+}
+.black-bar {
+  display: block;
+  height: 34.6px;
+  background-color: #2f2f2f;
+  margin-top: 14px;
+}
+#cvc {
+  background: #adb5be;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-align: right;
+  padding-right: 11px;
+  color: white;
+  font-size: 9px;
+  padding-block: 9px 10px;
+  margin-top: 15px;
+}
+
+.grey-bar {
+  padding-inline: 26px 28px;
+}
+.card-frontside {
+  position: absolute;
+  width: 285px;
+  height: 156.21px;
+  top: 128px;
+  left: 17px;
+  border-radius: 6px;
+  background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+}
+.rounds {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 19px;
+  margin-top: 17px;
+}
+.rounds :first-child {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.rounds :last-child {
+  width: 13.58px;
+  height: 13.5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card-number {
+  margin-top: 37px;
+  margin-left: 19px;
+  margin-bottom: 17px;
+}
+#cardNumber {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  letter-spacing: 2px;
+  width: 239px;
+}
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+  margin-left: 19px;
+  margin-right: 20px;
+}
+#cardName {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+}
+.card-date {
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-align: end;
+}
+.user-infos-container {
+  margin-top: 91px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-inline: 24px;
+  text-align: left;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+.user-infos-container h3 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+.user-infos-container input {
+  width: 100%;
+  border: 1px solid #dfdee0;
+  color: #21092f;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  padding-block: 11px;
+  padding-left: 16px;
+}
+.input-date {
+  display: flex;
+  gap: 8px;
+}
+.input-date input {
+  width: 72px;
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+}
+.date-header {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+#inputCvc {
+  width: 100%;
+}
+.confirm {
+  background: #21092f;
+  padding-block: 15px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+}
+.thanks-container {
+  text-align: center;
+  margin-inline: 24px;
+  margin-top: 91px;
+}
+.thanks-container img {
+  margin: auto;
+  margin-bottom: 35px;
+}
+.thanks-container h1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.73px;
+  letter-spacing: 3.422222137451172px;
+  color: #21092f;
+  margin-bottom: 16px;
+}
+.thanks-container p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  color: #8f8694;
+  margin-bottom: 48px;
+}
+.thanks-container button {
+  margin-bottom: 82px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .all-in-container {
+    display: flex;
+  }
+  .container {
+    background-color: #21092f;
+    width: 483px;
+    height: 100vh;
+  }
+  .card-backside {
+    width: 447px;
+    height: 245px;
+    top: 469px;
+    left: 258px;
+    border-radius: 10px;
+  }
+  .card-backside img {
+    margin: auto;
+    margin-top: 33px;
+  }
+  .black-bar {
+    display: block;
+    height: 54px;
+    background-color: #2f2f2f;
+    margin-top: 23px;
+  }
+  #cvc {
+    background: #adb5be;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    text-align: right;
+    padding-right: 11px;
+    color: white;
+    font-size: 14px;
+    padding-block: 9px 10px;
+    margin-top: 15px;
+  }
+
+  .grey-bar {
+    padding-inline: 41px 45px;
+  }
+  .card-frontside {
+    width: 447px;
+    height: 245px;
+    top: 187px;
+    left: 164px;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+  }
+  .rounds {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 32px;
+    margin-top: 28px;
+  }
+  .rounds :first-child {
+    width: 47px;
+    height: 47px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .rounds :last-child {
+    width: 21px;
+    height: 21px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .card-number {
+    margin-top: 64px;
+    margin-left: 32px;
+    margin-bottom: 25px;
+  }
+  #cardNumber {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 3.422222137451172px;
+    width: -webkit-fill-available;
+  }
+  .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.48px;
+    letter-spacing: 1.2857142686843872px;
+    margin-left: 19px;
+    margin-right: 20px;
+  }
+  #cardName {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+  }
+  .card-date {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+  }
+  .user-infos-container {
+    margin-top: 275px;
+    padding-left: 349px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+    gap: 20px;
+    margin-bottom: 45px;
+    height: 352px;
+    gap: 0px;
+  }
+  .user-infos-container h3 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+  }
+  .user-infos-container input {
+    width: 100%;
+    border: 1px solid #dfdee0;
+    color: #21092f;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    padding-block: 11px;
+    padding-left: 16px;
+  }
+  .input-date {
+    display: flex;
+    gap: 8px;
+  }
+  .input-date input {
+    width: 72px;
+    border: 1px solid #dfdee0;
+    border-radius: 8px;
+  }
+  .date-header {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  #inputCvc {
+    width: 100%;
+  }
+  .confirm {
+    background: #21092f;
+    padding-block: 15px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+  }
+  .thanks-container {
+    text-align: center;
+    margin-inline: 24px;
+    margin-top: 91px;
+  }
+  .thanks-container img {
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  .thanks-container h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.73px;
+    letter-spacing: 3.422222137451172px;
+    color: #21092f;
+    margin-bottom: 16px;
+  }
+  .thanks-container p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    color: #8f8694;
+    margin-bottom: 48px;
+  }
+  .thanks-container button {
+    margin-bottom: 82px;
+  }
+}
